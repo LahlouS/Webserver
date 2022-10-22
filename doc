@@ -9,3 +9,5 @@ Connecting to the Server through a web browser:
 https://support.kaspersky.com/KICSforNetworks/2.9/en-US/151470.htm
 
 
+epoll example:
+https://stackoverflow.com/questions/27247/could-you-recommend-some-guides-about-epoll-on-linux
