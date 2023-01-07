@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>test.html</title>
+        <link rel="icon" href="https://cdn.intra.42.fr/users/279a6ebab9ca714cb183c75921ab3332/slahlou.JPG" />
+        <style>
+            body
+            {
+                width: 100%;
+                height: 100%;
+                background-color: rgba(66, 192, 150, 0.4);
+            }
+            h1
+            {
+                color: black;
+            }
+            h3
+            {
+                margin-bottom: 10px; text-align: left; } .container { display: fex; justify-content: center;
+                text-align: center;
+                margin-left: 30%;
+                margin-right: 30%;
+                height: 60%;
+            }
+            .card
+            {
+                border: rgba(0, 0, 0, 0) solid 2px;
+                border-radius: 20px;
+                color: rgba(90, 26, 192, 0.5);
+                width: 400px;
+                box-shadow: 5px 10px 0px 3px rgb(124, 121, 121);
+                margin: 10%;
+                margin-bottom: 50px;
+                text-align: center;
+            }
+            .button
+            {
+                width: 30%;
+                height: 30px;
+                margin: 30px;
+                border: rgba(90, 26, 192, 0.4);
+                border-radius: 5px;
+                background-color: rgba(90, 26, 192, 0.4);
+            }
+            .row
+            {
+                display: flex;
+                align-items: center;
+                height: 40px;
+            }
+            #href
+            {
+                color: rgba(90, 26, 192, 0.5);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="card">Welcome in our webserv   !!</h1>
+            <div class="card">
+                <h2 >TEST IT </h2>
+                <form action="" method="post" enctype="multipart/form-data">
+                    <h3>Uplaod a file here :</h3>
+                    <div class="row">
+                        <input type="file" id="myfile" name="myfile"/>
+                        <button class="button" type ="submit" >upload</button>
+                    </div>
+                </form>
+                <h3 >Download a file ( see in home.html )
+                    <a href="./upload/img.jpeg" download id="herf">here</a>
+                </h3>
+            </div>
+        </div>
+    </body>
+</html>

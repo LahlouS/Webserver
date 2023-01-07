@@ -1,0 +1,6 @@
+
+
+server	{
+	root		.;
+	methodes	GET:POST:DELETE;
+}

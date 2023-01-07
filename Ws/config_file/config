@@ -1,0 +1,64 @@
+
+
+server	{
+
+	server_name					YO.com;
+
+	listen						2020;
+
+	autoindex					on;
+
+
+
+	root						./;
+
+	client_body_buffer_size		8k;
+
+
+	methodes							POST:GET:DELETE;
+
+	autoindex							on;
+
+	location							./config_file {
+										methodes							POST:GET:DELETE;
+										redirect					http://127.0.0.1:8080/;
+	}
+
+
+}
+
+server	{
+
+	server_name					example.com;
+
+	listen						8080;
+
+	autoindex					on;
+
+	root						./;
+
+	client_body_buffer_size		8k;
+
+	methodes        			POST:GET;
+
+	location		./config {
+				methodes		GET;
+				autoindex		off;
+				root			.;
+	}
+
+	location		./Client.cpp {
+				root srcs/class;
+	}
+
+	location	./test_delete/ {
+				root 		./;
+				methodes	DELETE;
+	}
+}
+
+
+
+
+
+
